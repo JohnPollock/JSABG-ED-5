@@ -32,6 +32,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(express.static(path.join(__dirname, 'public')));
 
 var server = app.listen(3000, function() {
+    console.log("App Server via Express is running on port 3000");
     console.log("To end, press Ctrl + C");
 });
 
